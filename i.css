@@ -1,0 +1,52 @@
+/* Apply background image to the body */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('sycamore.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Add a semi-transparent background to input and button for readability */
+input[type="text"], button {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+/* Style the input field */
+input[type="text"] {
+    margin-bottom: 20px;
+}
+
+/* Style the button */
+button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Change button color on hover */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Style the output text */
+#responseOutput {
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    white-space: pre-wrap;
+}
